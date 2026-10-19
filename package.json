@@ -1,0 +1,11 @@
+{
+  "name": "hmsk-germany-expat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Moving to Germany: EU Blue Card salary check, Anmeldung guide and a first-90-days checklist. Static, no dependencies.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/",
+    "start": "python3 -m http.server 8080 --directory public"
+  }
+}

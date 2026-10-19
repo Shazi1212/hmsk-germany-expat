@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Germany expat toolkit: Blue Card check, Anmeldung, first 90 days</title>
+<meta name="description" content="Check your salary against the 2026 EU Blue Card minimum, register your address in Germany (Anmeldung) and work through a first-90-days checklist. Free, runs in your browser.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B0F0C">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="app.css?v=2">
+</head>
+<body>
+
+<nav class="strip" aria-label="Site">
+  <div class="wrap strip__in">
+    <a class="strip__home" id="lnkHome" href="/tools/germany-expat/">&larr; hmsk.life</a>
+    <span class="strip__sp"></span>
+    <a id="lnkImprint" href="/imprint/">Imprint</a>
+    <a id="lnkPrivacy" href="/privacy/">Privacy</a>
+    <span class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="de" aria-pressed="false">DE</button>
+    </span>
+  </div>
+</nav>
+
+<main class="wrap main">
+  <header class="head">
+    <p class="cmd"><span class="ps">$</span> <span data-i18n="cmd">germany --move-in</span></p>
+    <h1 data-i18n="h1">Moving to Germany: the first three things to sort out</h1>
+    <p class="lead" data-i18n="lead"></p>
+    <ul class="jump" role="list">
+      <li><a href="#bluecard" data-i18n="nav_bc">1. Blue Card check</a></li>
+      <li><a href="#anmeldung" data-i18n="nav_an">2. Anmeldung</a></li>
+      <li><a href="#checklist" data-i18n="nav_cl">3. First 90 days</a></li>
+    </ul>
+  </header>
+
+  <!-- 1. Blue Card -->
+  <section class="part" id="bluecard">
+    <p class="cmd"><span class="ps">$</span> <span data-i18n="bc_cmd">blue-card --check 2026</span></p>
+    <h2 data-i18n="bc_h">Is your salary enough for an EU Blue Card?</h2>
+    <p class="lead" data-i18n="bc_lead"></p>
+    <div class="grid">
+      <form class="panel qs" id="bcForm" autocomplete="off" onsubmit="return false">
+        <div class="q">
+          <label class="q__l" for="salary"><span class="flag" data-i18n="f_salary">--gross-salary</span> <span data-i18n="q_salary">Gross salary in your contract</span></label>
+          <div class="money">
+            <span class="money__cur">€</span>
+            <input id="salary" name="salary" type="text" inputmode="decimal" placeholder="50,700">
+            <select id="period" name="period" aria-label="Period">
+              <option value="year" data-i18n="per_year">per year</option>
+              <option value="month" data-i18n="per_month">per month (× 12)</option>
+            </select>
+          </div>
+          <p class="hint" data-i18n="h_salary"></p>
+        </div>
+        <fieldset class="q">
+          <legend><span class="flag" data-i18n="f_degree">--qualification</span> <span data-i18n="q_degree">Your qualification</span></legend>
+          <div class="opts opts--col">
+            <label><input type="radio" name="degree" value="degree"><span data-i18n="d_degree"></span></label>
+            <label><input type="radio" name="degree" value="it-experience"><span data-i18n="d_it"></span></label>
+            <label><input type="radio" name="degree" value="vocational"><span data-i18n="d_voc"></span></label>
+            <label><input type="radio" name="degree" value="none"><span data-i18n="d_none"></span></label>
+          </div>
+          <p class="hint" data-i18n="h_degree"></p>
+        </fieldset>
+        <fieldset class="q">
+          <legend><span class="flag" data-i18n="f_occ">--occupation</span> <span data-i18n="q_occ">What is the job?</span></legend>
+          <div class="opts opts--col">
+            <label><input type="radio" name="occupation" value="it"><span data-i18n="o_it"></span></label>
+            <label><input type="radio" name="occupation" value="shortage"><span data-i18n="o_short"></span></label>
+            <label><input type="radio" name="occupation" value="other"><span data-i18n="o_other"></span></label>
+          </div>
+          <p class="hint" data-i18n="h_occ"></p>
+        </fieldset>
+        <div class="q q--last">
+          <label class="check"><input type="checkbox" name="recentGrad" id="recentGrad"><span><span class="flag" data-i18n="f_grad">--new-graduate</span> <span data-i18n="q_grad"></span></span></label>
+          <label class="check"><input type="checkbox" name="age45" id="age45"><span><span class="flag" data-i18n="f_age">--age-45-plus</span> <span data-i18n="q_age"></span></span></label>
+        </div>
+      </form>
+
+      <section class="panel result" id="bcResult" aria-live="polite">
+        <p class="result__title"><span class="ps">&gt;</span> <span data-i18n="result">Your result</span></p>
+        <div id="bcBody"></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- 2. Anmeldung -->
+  <section class="part" id="anmeldung">
+    <p class="cmd"><span class="ps">$</span> <span data-i18n="an_cmd">man anmeldung</span></p>
+    <h2 data-i18n="an_h">Anmeldung: register your address</h2>
+    <p class="lead" data-i18n="an_lead"></p>
+    <div class="panel">
+      <div class="date-row">
+        <label for="moveIn"><span class="flag" data-i18n="an_date_lbl">--move-in-date</span> <span data-i18n="an_date_q">When do (or did) you move in?</span></label>
+        <input type="date" id="moveIn" class="moveIn">
+        <p class="deadline" id="anDeadline" aria-live="polite"></p>
+      </div>
+      <div class="cols">
+        <div><h3 class="h3" data-i18n="an_docs_h">Bring</h3><ul class="list" id="anDocs"></ul></div>
+        <div><h3 class="h3" data-i18n="an_steps_h">How</h3><ol class="list list--num" id="anSteps"></ol></div>
+        <div><h3 class="h3" data-i18n="an_get_h">What you get</h3><ul class="list" id="anGet"></ul></div>
+      </div>
+      <p class="note" data-i18n="an_fine"></p>
+    </div>
+  </section>
+
+  <!-- 3. Checklist -->
+  <section class="part" id="checklist">
+    <p class="cmd"><span class="ps">$</span> <span data-i18n="cl_cmd">todo --first-90-days</span></p>
+    <h2 data-i18n="cl_h">Your first 90 days</h2>
+    <p class="lead" data-i18n="cl_lead"></p>
+    <div class="panel">
+      <div class="cl-head">
+        <p class="progress"><span id="clProgress"></span><span class="bar"><span id="clBar"></span></span></p>
+        <span class="cl-actions">
+          <button type="button" class="linkish" id="clPrint" data-i18n="cl_print">Print</button>
+          <button type="button" class="linkish" id="clReset" data-i18n="cl_reset">Clear checklist</button>
+        </span>
+      </div>
+      <ul class="cl" id="clList" role="list"></ul>
+    </div>
+  </section>
+
+  <section class="sources">
+    <p class="cmd"><span class="ps">$</span> <span data-i18n="sources_cmd">cat sources.txt</span></p>
+    <p class="small" data-i18n="asof"></p>
+    <ul id="sourcesList"></ul>
+    <p class="note" data-i18n="note"></p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p data-i18n="privacy_line"></p>
+</footer>
+
+<script src="config.js"></script>
+<script src="logic.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
