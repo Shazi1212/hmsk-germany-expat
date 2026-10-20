@@ -115,7 +115,7 @@ window.GX_I18N = {
     privacy_line: 'Runs in your browser. No cookies, no tracking. Your salary, dates and ticks are saved only in this browser (localStorage) and never sent anywhere.',
     imprint: 'Imprint', imprint_href: '/imprint/', privacy: 'Privacy', privacy_href: '/privacy/',
     home_href: '/tools/germany-expat/',
-    contact_href: '/?topic=germany-expat-2027#contact',
+    contact_href: '/subscribe/?topic=germany-expat-2027',
     src: [
       ['BMI notice on the Blue Card minimum salaries for 2026, 2 Dec 2025 (BAnz AT 18.12.2025 B3)', 'https://www.bundesanzeiger.de/pub/publication/REViP4bN6jVdpGxPaiQ/content/REViP4bN6jVdpGxPaiQ/BAnz%20AT%2018.12.2025%20B3.pdf'],
       ['§ 18g AufenthG: EU Blue Card', 'https://www.gesetze-im-internet.de/aufenthg_2004/__18g.html'],
@@ -244,7 +244,7 @@ window.GX_I18N = {
     privacy_line: 'Läuft in Ihrem Browser. Keine Cookies, kein Tracking. Gehalt, Daten und Haken werden nur in diesem Browser gespeichert (localStorage) und nirgendwohin gesendet.',
     imprint: 'Impressum', imprint_href: '/impressum/', privacy: 'Datenschutz', privacy_href: '/datenschutz/',
     home_href: '/de/tools/germany-expat/',
-    contact_href: '/de/?topic=germany-expat-2027#contact',
+    contact_href: '/de/newsletter/?topic=germany-expat-2027',
     src: [
       ['Bekanntmachung des BMI zu den Mindestgehältern der Blauen Karte EU 2026, 2.12.2025 (BAnz AT 18.12.2025 B3)', 'https://www.bundesanzeiger.de/pub/publication/REViP4bN6jVdpGxPaiQ/content/REViP4bN6jVdpGxPaiQ/BAnz%20AT%2018.12.2025%20B3.pdf'],
       ['§ 18g AufenthG: Blaue Karte EU', 'https://www.gesetze-im-internet.de/aufenthg_2004/__18g.html'],
