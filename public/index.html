@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Germany expat toolkit: Blue Card check, Anmeldung, first 90 days</title>
 <meta name="description" content="Check your salary against the 2026 EU Blue Card minimum, register your address in Germany (Anmeldung) and work through a first-90-days checklist. Free, runs in your browser.">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#0B0F0C">
+<meta name="theme-color" content="#EFF1F2">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="app.css?v=2">
+<link rel="preload" href="fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="letterpress.css?v=2">
+<link rel="stylesheet" href="app.css?v=4">
 </head>
 <body>
 
@@ -26,7 +27,7 @@
 
 <main class="wrap main">
   <header class="head">
-    <p class="cmd"><span class="ps">$</span> <span data-i18n="cmd">germany --move-in</span></p>
+    <p class="eyebrow"><span data-i18n="cmd">Germany Expat Toolkit</span></p>
     <h1 data-i18n="h1">Moving to Germany: the first three things to sort out</h1>
     <p class="lead" data-i18n="lead"></p>
     <ul class="jump" role="list">
@@ -38,7 +39,7 @@
 
   <!-- 1. Blue Card -->
   <section class="part" id="bluecard">
-    <p class="cmd"><span class="ps">$</span> <span data-i18n="bc_cmd">blue-card --check 2026</span></p>
+    <p class="cmd"><span data-i18n="bc_cmd">Part 1 · Blue Card 2026</span></p>
     <h2 data-i18n="bc_h">Is your salary enough for an EU Blue Card?</h2>
     <p class="lead" data-i18n="bc_lead"></p>
     <div class="grid">
@@ -81,7 +82,7 @@
       </form>
 
       <section class="panel result" id="bcResult" aria-live="polite">
-        <p class="result__title"><span class="ps">&gt;</span> <span data-i18n="result">Your result</span></p>
+        <p class="result__title"><span data-i18n="result">Your result</span></p>
         <div id="bcBody"></div>
       </section>
     </div>
@@ -89,7 +90,7 @@
 
   <!-- 2. Anmeldung -->
   <section class="part" id="anmeldung">
-    <p class="cmd"><span class="ps">$</span> <span data-i18n="an_cmd">man anmeldung</span></p>
+    <p class="cmd"><span data-i18n="an_cmd">Part 2 · Anmeldung</span></p>
     <h2 data-i18n="an_h">Anmeldung: register your address</h2>
     <p class="lead" data-i18n="an_lead"></p>
     <div class="panel">
@@ -109,7 +110,7 @@
 
   <!-- 3. Checklist -->
   <section class="part" id="checklist">
-    <p class="cmd"><span class="ps">$</span> <span data-i18n="cl_cmd">todo --first-90-days</span></p>
+    <p class="cmd"><span data-i18n="cl_cmd">Part 3 · Checklist</span></p>
     <h2 data-i18n="cl_h">Your first 90 days</h2>
     <p class="lead" data-i18n="cl_lead"></p>
     <div class="panel">
@@ -125,7 +126,7 @@
   </section>
 
   <section class="sources">
-    <p class="cmd"><span class="ps">$</span> <span data-i18n="sources_cmd">cat sources.txt</span></p>
+    <p class="cmd"><span data-i18n="sources_cmd">Sources</span></p>
     <p class="small" data-i18n="asof"></p>
     <ul id="sourcesList"></ul>
     <p class="note" data-i18n="note"></p>
@@ -138,7 +139,7 @@
 
 <script src="config.js"></script>
 <script src="logic.js"></script>
-<script src="i18n.js"></script>
-<script src="app.js"></script>
+<script src="i18n.js?v=4"></script>
+<script src="app.js?v=4"></script>
 </body>
 </html>

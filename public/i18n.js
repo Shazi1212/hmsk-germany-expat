@@ -4,12 +4,12 @@ window.GX_I18N = {
   en: {
     locale: 'en-GB',
     title: 'Germany expat toolkit: Blue Card check, Anmeldung, first 90 days',
-    cmd: 'germany --move-in',
+    cmd: 'Germany Expat Toolkit',
     h1: 'Moving to Germany: the first three things to sort out',
     lead: 'Check whether your job offer is enough for an EU Blue Card, register your address the right way, and work through the first 90 days with a checklist that explains every German word on it.',
     nav_bc: '1. Blue Card check', nav_an: '2. Anmeldung', nav_cl: '3. First 90 days',
 
-    bc_cmd: 'blue-card --check 2026',
+    bc_cmd: 'Part 1 · Blue Card 2026',
     bc_h: 'Is your salary enough for an EU Blue Card?',
     bc_lead: 'The 2026 minimum gross salaries from the Federal Ministry of the Interior: €50,700 a year, or €45,934.20 for shortage occupations, new graduates and IT specialists.',
     f_salary: '--gross-salary',
@@ -52,7 +52,7 @@ window.GX_I18N = {
     upd_line: 'The thresholds change every January. Want an email when the 2027 figures are published?',
     upd_btn: 'Email me the 2027 figures',
 
-    an_cmd: 'man anmeldung',
+    an_cmd: 'Part 2 · Anmeldung',
     an_h: 'Anmeldung: register your address',
     an_lead: 'Everyone who moves into a flat in Germany has to register it at the local registration office (Bürgeramt or Einwohnermeldeamt) within two weeks of moving in (§ 17 Bundesmeldegesetz). Most other steps need the registration certificate, so do this first.',
     an_date_lbl: '--move-in-date',
@@ -81,7 +81,7 @@ window.GX_I18N = {
     ],
     an_fine: 'Missing the deadline is an administrative offence that can be fined (§ 54 BMG). Register again within two weeks every time you move, and deregister (Abmeldung) when you leave Germany.',
 
-    cl_cmd: 'todo --first-90-days',
+    cl_cmd: 'Part 3 · Checklist',
     cl_h: 'Your first 90 days',
     cl_lead: 'Tick things off as you go. The dates count from your move-in date. Your progress is saved in this browser only.',
     cl_progress: '{n} of {t} done',
@@ -109,7 +109,7 @@ window.GX_I18N = {
       { id: 'licence', day: 90, t: 'Check if you need to exchange your driving licence', term: 'Führerschein umschreiben', d: 'A non-EU licence is valid in Germany for 6 months after you take up residence (§ 29 FeV). Exchanging it at the Führerscheinstelle can take weeks, and for some countries means a test, so start early. EU licences stay valid.' },
     ],
 
-    sources_cmd: 'cat sources.txt',
+    sources_cmd: 'Sources',
     asof: 'Checked against official sources on 19 October 2026.',
     note: 'Not legal advice. This toolkit summarises the rules as of October 2026. Your embassy, Ausländerbehörde or an immigration lawyer has the final word, so check your case with them before you rely on it.',
     privacy_line: 'Runs in your browser. No cookies, no tracking. Your salary, dates and ticks are saved only in this browser (localStorage) and never sent anywhere.',
@@ -133,12 +133,12 @@ window.GX_I18N = {
   de: {
     locale: 'de-DE',
     title: 'Toolkit für den Umzug nach Deutschland: Blaue Karte, Anmeldung, erste 90 Tage',
-    cmd: 'germany --move-in',
+    cmd: 'Germany Expat Toolkit',
     h1: 'Neu in Deutschland: die ersten drei Dinge, die Sie erledigen müssen',
     lead: 'Prüfen Sie, ob Ihr Jobangebot für die Blaue Karte EU reicht, melden Sie Ihre Wohnung richtig an und arbeiten Sie die ersten 90 Tage mit einer Checkliste ab, die jeden Fachbegriff erklärt.',
     nav_bc: '1. Blaue Karte', nav_an: '2. Anmeldung', nav_cl: '3. Erste 90 Tage',
 
-    bc_cmd: 'blue-card --check 2026',
+    bc_cmd: 'Teil 1 · Blaue Karte 2026',
     bc_h: 'Reicht Ihr Gehalt für die Blaue Karte EU?',
     bc_lead: 'Die Mindestgehälter 2026 laut Bundesministerium des Innern: 50.700 € brutto im Jahr, oder 45.934,20 € für Engpassberufe, Berufseinsteiger und IT-Fachkräfte.',
     f_salary: '--bruttogehalt',
@@ -181,7 +181,7 @@ window.GX_I18N = {
     upd_line: 'Die Grenzen ändern sich jeden Januar. Sollen wir Ihnen die Werte für 2027 mailen, sobald sie veröffentlicht sind?',
     upd_btn: 'Werte 2027 per E-Mail',
 
-    an_cmd: 'man anmeldung',
+    an_cmd: 'Teil 2 · Anmeldung',
     an_h: 'Anmeldung: Wohnsitz anmelden',
     an_lead: 'Wer in Deutschland in eine Wohnung zieht, muss sie innerhalb von zwei Wochen beim Bürgeramt oder Einwohnermeldeamt anmelden (§ 17 Bundesmeldegesetz). Die meisten anderen Schritte brauchen die Meldebescheinigung, also zuerst erledigen.',
     an_date_lbl: '--einzugsdatum',
@@ -210,7 +210,7 @@ window.GX_I18N = {
     ],
     an_fine: 'Eine verpasste Frist ist eine Ordnungswidrigkeit und kann ein Bußgeld kosten (§ 54 BMG). Bei jedem Umzug innerhalb von zwei Wochen ummelden, und abmelden, wenn Sie Deutschland verlassen.',
 
-    cl_cmd: 'todo --first-90-days',
+    cl_cmd: 'Teil 3 · Checkliste',
     cl_h: 'Ihre ersten 90 Tage',
     cl_lead: 'Haken Sie ab, was erledigt ist. Die Termine zählen ab Ihrem Einzugsdatum. Ihr Fortschritt wird nur in diesem Browser gespeichert.',
     cl_progress: '{n} von {t} erledigt',
@@ -238,7 +238,7 @@ window.GX_I18N = {
       { id: 'licence', day: 90, t: 'Prüfen, ob Sie den Führerschein umschreiben müssen', term: 'Führerschein umschreiben', d: 'Ein Nicht-EU-Führerschein gilt nach Begründung des Wohnsitzes 6 Monate in Deutschland (§ 29 FeV). Die Umschreibung bei der Führerscheinstelle kann Wochen dauern und je nach Land eine Prüfung erfordern, also früh beginnen. EU-Führerscheine bleiben gültig.' },
     ],
 
-    sources_cmd: 'cat quellen.txt',
+    sources_cmd: 'Quellen',
     asof: 'Mit amtlichen Quellen abgeglichen am 19. Oktober 2026.',
     note: 'Keine Rechtsberatung. Dieses Toolkit fasst die Regeln mit Stand Oktober 2026 zusammen. Das letzte Wort haben Botschaft, Ausländerbehörde oder eine Fachanwältin für Migrationsrecht; prüfen Sie Ihren Fall dort, bevor Sie sich darauf verlassen.',
     privacy_line: 'Läuft in Ihrem Browser. Keine Cookies, kein Tracking. Gehalt, Daten und Haken werden nur in diesem Browser gespeichert (localStorage) und nirgendwohin gesendet.',
